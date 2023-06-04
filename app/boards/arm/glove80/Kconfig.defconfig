@@ -5,9 +5,6 @@ if BOARD_GLOVE80_LH
 config BOARD
 	default "glove80 lh"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
-
 config ZMK_KEYBOARD_NAME
 	default "Glove80 Left"
 endif # BOARD_GLOVE80_LH
@@ -15,6 +12,9 @@ endif # BOARD_GLOVE80_LH
 if BOARD_GLOVE80_RH
 config BOARD
 	default "glove80 rh"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
 
 config ZMK_KEYBOARD_NAME
 	default "Glove80 Right"
